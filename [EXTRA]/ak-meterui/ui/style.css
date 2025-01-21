@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'pricedown';
+  src: url(pricedown.ttf);
+}
+
+body {
+    overflow: hidden;
+}
+
+.carhud-container {
+    display: none;
+    font-family: pricedown;
+    position: absolute;
+    text-align: center;
+    font-size: 3.5rem;
+    bottom: 0.01vh;
+    left: 23%;
+    transform: translateX(-50%);
+    height: 6vh;
+    width: 7vw;
+    color: white;
+    animation: carhud-enter .5s;
+}
+
+.vel {
+    position: absolute;
+    text-align: center;
+    font-size: 3.5rem;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 0 3rem black;
+}
+
+.kmh {
+    position: absolute;
+    font-size: 1rem;
+    left: 68%;
+    bottom: 1vh;
+    text-shadow: 0 0 3rem black;
+}
+
+.fuel {
+    display: none;
+    position: absolute;
+    text-align: center;
+    font-size: 1.6rem;
+    left: -12%;
+    bottom: 4vh;
+    padding: 0.5rem 1rem;
+    height: fit-content;
+    width: fit-content;
+    border-radius: .5vh;
+    color: white;
+    text-shadow: 0 0 3rem black;
+}
+
+.seatbelt-container {
+    display: none;
+    position: absolute;
+    left: 19.3%;
+    bottom: 8%;
+    color: white;
+    text-shadow: 0 0 3rem black;
+    -webkit-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+}
+
+@keyframes carhud-enter {
+    from {
+        bottom: -2vh;
+    }
+}

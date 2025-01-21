@@ -1,0 +1,88 @@
+body {
+    overflow: hidden;
+}
+
+.hud-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    align-items: center;
+    height: auto;
+    width: 17vw;
+    bottom: 0.05vw;
+    left: 1.25vw;
+    column-gap: 10px;
+    padding: 0 .2vw 0 .2vw;
+    }
+    
+    #hunger-hud, #thirst-hud{
+       
+         transition: ease .5s;
+         animation: carhud-enter .5s;
+    }
+.hud {
+    position: relative;
+    width: 48%;
+    height: 2.3vh;
+    background-color: rgba(0, 0, 0, 0.801);
+  border-radius: 4px;
+    margin: .3vh 0 .3vh 0;
+    transition: ease .5s;
+    background-color: rgba(0, 0, 0, 0.32);
+    box-shadow: 0 0 0.5vh black;
+
+}
+
+
+
+.highlight-red {
+            background-color: rgba(255, 0, 0, 0.475) !important;
+        }
+.highlight-green {
+            background-color: rgba(0, 255, 81, 0.555) !important;
+        }
+
+.hud-bar {
+  
+    width: 48%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.856);
+    border-radius: 4px;
+    
+}
+
+.icon {
+    position: absolute;
+    margin-top: .25vh;
+    left: 15%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: 0 0 .5vh black;
+}
+
+#stress-hud{
+    
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    color: #ED1C24;wwwwwd
+    from {
+        opacity: 0;
+        transform: translateX(-2vw);
+    }
+}
+
+#health{
+    background-color: rgba(4, 255, 4, 0.389);
+}
+
+#armour{
+    background-color: rgba(0, 21, 255, 0.449);
+}
+#hunger{
+    background-color: rgba(255, 128, 0, 0.768);
+}
+#thirst{
+    background-color: rgba(0, 191, 255, 0.693);
+}

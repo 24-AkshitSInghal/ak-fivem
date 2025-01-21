@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  </head>
+  <body>
+    <div class="inventory-container">
+      <div class="inventory">
+        <div class="player-inventory-container">
+          <div class="player-inventory-name">player</div>
+          <div class="player-inventory-weight">0.00/60.00</div>
+          <div class="player-inventory">
+            <div class="boxes" id="player-inventory-boxes"></div>
+          </div>
+        </div>
+
+        <div class="controls-section">
+          <input id="search-button" placeholder="Search"/>
+          <input id="amount-button" type="number" step="1" placeholder="1" min="1" inputmode="numeric" oninput="validity.valid||(value='');" />
+          <span id="use-button">Use</span>
+          <span id="close-button">Close</span>
+        </div>
+        <div class="other-inventory-container">
+          <div class="other-inventory-name"></div>
+          <div class="other-inventory-weight">0.00/112</div>
+          <div class="other-inventory">
+            <div class="boxes" id="other-inventory-boxes"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

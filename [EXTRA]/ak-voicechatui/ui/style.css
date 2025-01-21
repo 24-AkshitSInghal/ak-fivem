@@ -1,0 +1,49 @@
+@font-face {
+    font-family: pricedown;
+    src: url("./font/pricedown.ttf");
+}
+
+body {
+    overflow: hidden;
+}
+
+.proximity {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: auto;
+     bottom: 35px;
+    left: -15px;
+    font-family: pricedown;
+    font-size: .9rem;
+    animation: proximity-enter ease .5s;
+    writing-mode: vertical-rl; /* This makes the text vertical */
+    text-orientation: upright; /* This keeps the characters upright */
+}
+
+.talking {
+    display: none;
+     position: absolute;
+    bottom: 5px;
+    left: 21px;
+    width: auto;
+    height: 2vh;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1vh black;
+    font-size: 1.2rem;
+}
+
+@keyframes talking {
+    50% {
+        text-shadow: none;
+    } 100% {
+        text-shadow: 0 0 1vh white;
+    }
+}
+
+@keyframes proximity-enter {
+    from {
+        right: 2vw;
+    }
+}
